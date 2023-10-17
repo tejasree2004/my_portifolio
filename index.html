@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya - My portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: auto;
+            padding: 0%;
+        }
+        body{
+            background-color: rgb(167, 167, 233);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(3, 3, 114);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 19px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            
+            color: black;
+            font-size: 1.1rem;
+        }
+        main hr{
+            border: 0;
+            background: green;
+            height: 1.2px;
+            margin: 40px 80px;
+        }
+        .left{
+            font-size: 2rem
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+        .firstsection >div{
+            width: 30%;
+        }
+       
+        .leftsection{
+            
+            font-size: 2rem;
+        }
+        .leftsection .btn{
+            padding: 12px;
+            background-color: rgb(59, 25, 59);
+            color: white;
+            border: 2px solid white;
+            border-radius: 2px;
+            cursor: pointer;
+            transition:all 0.3s;
+        }
+        .btn:hover{
+            transform: translateY(-10px);
+            background-color: blue;
+            zoom: 110%;
+        }
+        .rightsection img{
+            width: 125%;
+        }
+        .red{
+            color: red;
+        }
+        #element{
+            color: red; 
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+           height: 80vh; 
+        }
+        .secondsection h1{
+            font-size: 2rem;
+        }
+        .text-grey{
+            color: black;
+        }
+        .secondsection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 50px 0;
+            display: flex;
+        }
+        .secondsection .vertical{
+            height: 90px;
+            width: 1px;
+            background-color: rgb(252, 253, 251);
+            margin: 0 7.5vw;
+        }
+        .vertical-title{
+            position: relative;
+            top: 35px;
+            color: black;
+
+        }
+        .vertical-disc{
+            position: relative;
+            top: 40px;
+            width: 150px;
+            font-size: 12px;
+            color: rgb(15, 15, 15);
+
+        }
+        .top-image{
+            width: 50px;
+            position: relative;
+            top: -60%;
+            left: -25px;
+        }
+        footer{
+            background-color: black;
+           
+        }
+        .footer{
+            display: flex;
+            padding: 23px 120px;
+            color: aliceblue;
+            justify-content: space-around;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer>div{
+            width: 250px;
+        }
+        footer .footer-text{
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+        @media screen and (max-width: 1000px) {
+            body{
+            background-color:red;
+            min-width: fit-content;
+            }
+            .box{
+                flex-direction: column;
+            }
+            .secondsection .vertical{
+                height: unset;
+
+            }
+            .vertical-title,.vertical-disc{
+                left: 45px;
+            }
+            
+            .secondsection .box{
+                width: 50vw;
+            }
+            .firstsection{
+                flex-direction: column-reverse;
+            }
+            nav{
+                flex-direction: column;
+            }
+            .top-image{
+                top: 100px;
+            }
+            .leftsection{
+                display: flex;
+                width: 100% !important;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .footer{
+                display: flex;
+                height: 10vh;
+            }
+            .rightsection{
+                width: 721px;
+                display: flex;
+                justify-content: center;
+            }
+            .rightsection img{
+                display: flex;
+                width: 45vw;
+                margin-bottom: 72px;
+            }
+            .secondsection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        html{
+            scroll-behavior:smooth;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Tejasree's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="">Certificates</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+              <div> Hi I am <span class="red">Tejasree charugundla</span></div>
+                <div>And I'm a computer science student at</div>
+                <div>Vellore Institute of Technology</div>
+                <span id="element"></span>
+                <div class="buttun">
+                    <a href="https://www.canva.com/design/DAFXuKWKIP4/_B4n1tOPJm4ie5L1j0Dfvg/view?utm_content=DAFXuKWKIP4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank"><button class="btn"> Resume </button></a>
+                    <a href="https://www.linkedin.com/in/surya-keerthi-gubbala-/" target="_blank"><button class="btn"> Linkedin </button></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png.jpg" alt="" >
+            </div>
+        </section>
+<hr>
+        <section class="secondsection">
+            <span class="text-grey">Skills i have earned soo far</span>
+            <h1>Skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="top-image" src="logo/developer.png" alt="">
+                    <div class="vertical-title">
+                        Programing 
+                    </div>
+                    <div class="vertical-disc">
+                        <div>Python (Main),</div> 
+                        <div>Java (OOPs), </div>
+                        <div>HTML, CSS, java script,</div>
+                        <div>Sql & Mysql , C & C++ </div>
+                    </div> 
+                </div>
+                <div class="vertical">
+                    <img class="top-image" src="logo/linkedin-logo.png" alt="">
+                    <div class="vertical-title">
+                        Knowledge
+                    </div>
+                    <div class="vertical-disc">
+                        <div> DAta Structures</div>
+                        <div> Database</div>
+                        <div> Mathematics</div>
+                    </div> 
+                </div>
+                <div class="vertical">
+                    <img class="top-image" src="logo/facebok-logo.png" alt="">
+                    <div class="vertical-title">
+                        Technical
+                    </div>
+                    <div class="vertical-disc">
+                        <div> Coding, MS Office</div>
+                        <div>Excel, Word, Powerpoint</div>
+                        <div>social media</div>
+                        <div>Editing </div>
+                    </div> 
+                </div>
+                <div class="vertical">
+                    <img class="top-image" src="logo/html-logo.png" alt="">
+                    <div class="vertical-title">
+                        Stength
+                    </div>
+                    <div class="vertical-disc">
+                        <div> Teaching</div>
+                        <div> Risk management</div>
+                        <div> Hard work </div>
+                        <div>Team spirit</div>
+                    </div> 
+                </div>
+                <div class="vertical">
+                    <img class="top-image" src="logo/instagram-logo.png" alt="">
+                    <div class="vertical-title">
+                        languages
+                    </div>
+                    <div class="vertical-disc">
+                        <div>English (Main)</div>
+                        <div>Telugu (Native)</div>
+                        <div>Hindi (Intermidiate)</div>
+                        <div>Spanish (Beginner)</div>
+                        
+                    </div> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Teja's student portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-text"> www.tejaportfofilo.com | all rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+         strings: ['Welcome to my Portfolio'],
+        typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
